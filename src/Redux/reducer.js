@@ -1,9 +1,9 @@
-import { Types } from './action';
+import { Types } from './types';
 
 const initialState = {
 	user: {
 		userId:'',
-		firstName: '',
+		firstName: 'Monarch',
 		lastName: '',
 		phoneNo: '',
 		email: '',
