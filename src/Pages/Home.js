@@ -4,15 +4,17 @@ import { connect } from 'react-redux';
 class Home extends Component{
     render(){
         return(
-            <>Home</>
+            <>
+                Home
+                {this.props.name}
+            </>
         )
     }
 }
 
 const mapStateToProps = (state) => {
 	return {
-		phoneNo: state.phoneNo,
-		otp: state.otp
+		name: state.user.firstName,
 	};
 
 };
