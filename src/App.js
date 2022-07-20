@@ -10,6 +10,7 @@ class App extends Component{
             <Router>
                 <Routes>
                     <Route path='/' exact element={<Home/>} />
+                    
                 </Routes>
             </Router>
         )
