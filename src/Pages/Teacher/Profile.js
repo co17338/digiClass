@@ -1,6 +1,6 @@
 import {Component} from "react";
 import { connect } from 'react-redux';
-
+//ishita
 class T_Profile extends Component{
     render(){
         return(

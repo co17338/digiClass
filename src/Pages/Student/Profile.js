@@ -5,8 +5,6 @@ class S_Profile extends Component{
     render(){
         return(
             <>
-                Student Profile
-                {this.props.name}
             </>
         )
     }
