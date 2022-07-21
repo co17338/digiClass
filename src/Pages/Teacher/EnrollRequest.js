@@ -1,7 +1,7 @@
 import {Component} from "react";
 import { connect } from 'react-redux';
 
-class Home extends Component{
+class EnrollReq extends Component{
     render(){
         return(
             <>
@@ -19,4 +19,4 @@ const mapStateToProps = (state) => {
 
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(EnrollReq);
