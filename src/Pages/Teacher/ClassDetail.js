@@ -7,6 +7,7 @@ class T_ClassDetail extends Component{
     render(){
         return(
             <>
+            
                 teacher ClassDetail
                 {this.props.name}
             </>
