@@ -1,8 +1,9 @@
 import {Component} from 'react';
 import  { BrowserRouter as Router ,Route, Routes} from 'react-router-dom';
 import './App.css';
-import Rahul from './rahul';
-import Home from './Pages/Home';
+import T_Home from './Pages/Teacher/Home';
+import T_Profile from './Pages/Student/Profile'
+import S_Home from './Pages/Student/Home';
 
 class App extends Component{
 
@@ -11,7 +12,9 @@ class App extends Component{
             <div>
             <Router>
                 <Routes>
-                    <Route path='/' exact element={<Home/>} />
+                    <Route path='/t/' exact element={<T_Home/>} />
+                    <Route path='/t/profile' exact element={<T_Profile/>} />
+                    <Route path='/s/' exact element={<S_Home/>} />
                 </Routes>
             </Router>
             <div className="h-full flex justify-center flex-col w-2/3 m-auto p-8 shadow-lg">
