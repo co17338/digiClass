@@ -1,15 +1,18 @@
-import { Component, Profiler } from "react";
+import { Component, createContext, Profiler } from "react";
 import { connect } from "react-redux";
 import "./Profile.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Row from "../../components/row"
+
 
 //ishita
-class T_Profile extends Component {
+
+
+class T_Profile extends Component   {
   render() {
     return (
       <div
-        class="container bg-light
-       "
+        class="container bg-light"
       >
         <div class="main-body">
           <nav aria-label="breadcrumb" class="main-breadcrumb">
@@ -18,10 +21,10 @@ class T_Profile extends Component {
                 <a href="index.html">Home</a>
               </li>
               <li class="breadcrumb-item">
-                <a href="javascript:void(0)">User</a>
+                <a href="">User</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
-                User Profile
+                Teacher Profile
               </li>
             </ol>
           </nav>
@@ -33,7 +36,7 @@ class T_Profile extends Component {
                   <div class="d-flex flex-column align-items-center text-center">
                     <img
                       src=""
-                      alt="Admin"
+                      alt="Teacher Photo "
                       class="rounded-circle"
                       width="150"
                     />
@@ -47,65 +50,17 @@ class T_Profile extends Component {
             </div>
             <div class="col-md-8">
               <div class="card mb-3">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Full name</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary">{this.props.name}</div>
-                  </div>
-                  <hr></hr>
+                <div class="card-body">   
 
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> User Id</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary">
-                      {this.props.user_id}
-                    </div>
-                  </div>
-                  <hr></hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Phone No.</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary">
-                      {this.props.phone_no}
-                    </div>
-                  </div>
-                  <hr></hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Email</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary">
-                      {this.props.email}
-                    </div>
-                  </div>
-                  <hr></hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Address</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary">
-                      {this.props.address}
-                    </div>
-                  </div>
-                  <hr></hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Experience</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary"></div>
-                  </div>
-                  <hr></hr>
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0"> Subjects</h6>
-                    </div>
-                    <div class="col-sm-9 text secondary"></div>
-                  </div>
-                  <hr></hr>
+                
+                  <Row tag="Full Name " value={this.props.name} />
+                  <Row tag="Teacher User Id " value={this.props.user_id}/>
+                  <Row tag="Phone No." value={this.props.phone_no}/>
+                  <Row tag="Email " value={this.props.email}/>
+                  <Row tag="Address" value={this.props.address}/>
+                  <Row tag="Expereince " value={this.props.expereince}/>
+                  <Row tag="Subjects" value={this.props.subjects}/>
+
                   <div class="row">
                     <div class="col-sm-12">
                       <a class="btn btn-info " target="__blank" href="">
@@ -123,6 +78,18 @@ class T_Profile extends Component {
                       <h6 class="d-flex align-items-center mb-3">
                         Description of  courses
                       </h6>
+                      <hr></hr>
+                      <Row tag=" Course Name " value="Course Description " />
+                      <Row tag=" Course Name " value="Course Description " />
+                      <Row tag=" Course Name " value="Course Description " />
+                      <Row tag=" Course Name " value="Course Description " />
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <a class="btn btn-info " target="__blank" href="">
+                            Add Course
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
