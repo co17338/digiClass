@@ -1,20 +1,20 @@
 import {Component} from "react";
 import { connect } from 'react-redux';
 
-class Home extends Component{
+class S_Profile extends Component{
     render(){
         return(
-            <>Home</>
+            <>
+            </>
         )
     }
 }
 
 const mapStateToProps = (state) => {
 	return {
-		phoneNo: state.phoneNo,
-		otp: state.otp
+		name: state.user.firstName,
 	};
 
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(S_Profile);
