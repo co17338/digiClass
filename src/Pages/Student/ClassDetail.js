@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 
+
 class S_ClassDetail extends Component {
   render() {
     return (
@@ -33,8 +34,9 @@ class S_ClassDetail extends Component {
             </div>
           </div>
         </nav>
-        <div className="container ms-5">
-          <div className="container card mt-4 ms-5 w-50 shadow-sm p-3 mb-3 bg-body border-secondary">
+        <div className="container ms-5 me-5 ">
+          <div className="card-deck"></div>
+          <div className="container card mt-4 ms-5  shadow-sm p-3 mb-3 text-light bg-dark border-secondary rounded-0">
             <div className="card-body ">
               <div className="container sm-10">
                 {/* <div className="row"> */}
@@ -93,7 +95,7 @@ class S_ClassDetail extends Component {
               </div>
             </div>
           </div>
-          <div className="container card w-50 ms-5 border-secondary">
+          <div className="container card w-50 ms-5 border-secondary rounded-0">
             <div className="card-body">
               <h5 className="card-title">
                 <b>What you'll learn</b>
@@ -112,6 +114,10 @@ class S_ClassDetail extends Component {
                     Provide amazing user experiences by leveraging the power of
                     JavaScript with ease
                   </li>
+                  <li>
+                   Learn all about React Hooks, React Components, Redux and lots of 
+                   cool stuff with this react course 
+                  </li>
                 </ul>
               </p>
             </div>
@@ -127,6 +133,35 @@ class S_ClassDetail extends Component {
               
             </div>
           </div> */}
+          <div className="card w-25 float-right m-5 position-absolute top-50 start-50 rounded-0 shadow-sm translate-middle-x translate-middle-y border-light ">
+            <div className="card">
+              <img
+                src="https://miro.medium.com/max/875/1*i3hzpSEiEEMTuWIYviYweQ.png"
+                className="card-img-top shadow-lg border-3 rounded-0"
+                alt="image here"
+              />
+              <div className="card-body">
+                <div className="card-title d-inline">
+                  <h2 className="d-inline">$25/</h2>
+                  <h5 className="d-inline ">Month</h5>
+                  <div className="d-inline p-2 text-muted">
+                    <s>$50</s> <b>50% OFF</b>
+                    <div className="text-danger">
+                      <b>5 hours</b> left at this price!
+                    </div>
+                  </div>
+                </div>
+                <div className="d-grid gap-2">
+                  <button className=" button1 btn btn-dark text-light rounded-0 btn-primary:hover" type="button">
+                   <b>Message</b> 
+                  </button>
+                  <button className="button2 btn btn-light text-dark rounded-0 border border-dark border-5"  type="button">
+                    <b>Enroll</b>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Student ClassDetail
