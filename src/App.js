@@ -4,7 +4,7 @@ import './App.css';
 import T_Home from './Pages/Teacher/Home';
 import T_Profile from './Pages/Student/Profile'
 import S_Home from './Pages/Student/Home';
-import Sidebar from './Pages/Student/Sidebar';
+import S_Navbar from './Pages/Student/Navbar.js';
 
 
 
@@ -12,8 +12,10 @@ class App extends Component{
 
     render(){
         return(
-          <>  <Sidebar/>,
-                <S_Home/>
+          <> 
+          <S_Navbar/>,
+          <S_Home/>
+           
                 </>
                 
         )

@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import Table from "react-bootstrap/Table"
 import './style.css'
 import ClassList from "./ClassList";
+import Navbar from "./Navbar.js";
 
 const S_Home=()=>{
 
     var [data,setdata]= useState(ClassList);
 
         return(
+            
             <>
             <h1> Welcome , Vasu Goel</h1>
             <div className="container mt-2">
