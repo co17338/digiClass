@@ -4,6 +4,7 @@ import Table from "react-bootstrap/Table"
 import './style.css'
 import ClassList from "./ClassList";
 import Navbar from "./Navbar.js";
+import CourseCard from "../../Components/CourseCard";
 
 const S_Home=()=>{
 
@@ -24,20 +25,7 @@ const S_Home=()=>{
                       {
                         data.map((ele)=>{
                             return(
-                                <>
-                    <div className="card">
-                        <div className="s_img">
-                            <img src={ele.img}/>
-                        </div>
-                        <div className = "s_name">
-                            <p><b>SUBJECT :</b> {ele.subject}</p>
-                        </div>
-                        <div className="s_details">
-                            <p><b>TEACHER :</b> {ele.Tname}</p>
-                            <p><b>CLASS TIMING : </b>{ele.c_timing}</p>
-                        </div>
-                        </div>
-                        </>
+                                <CourseCard c_timing={ele.c_timing}   Tname={ele.Tname}  subject={ele.subject}  img={ele.img}  />
                             )
                         })
                       }
