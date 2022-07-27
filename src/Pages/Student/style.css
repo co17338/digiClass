@@ -22,37 +22,50 @@
     text-align: center;
 }
 
-.sidebar{
-    height: 100%;
-        width: 300px;
-        background-color: #2f3640;
-}
-
-.SidebarList{
-    height: auto;
-    width: 100%;
-    padding: 0;
-}
-.SidebarList .row{
-    color: aliceblue;
-    width: 100%;
-    height: 40px;
-    border: 1px solid black;
-    list-style-type: none;
-    margin: 0%;
+.login {
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    height: 100vh;
     align-items: center;
-    font-weight: bold;
+    font-family: "Inter";
+}
+.login_form{
+    width: 450px;  
+    background: #A5C9CA;  
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px ; 
+    margin: 20 0 0 450px;  
+    padding: 80px; 
+}
+.login_form> h1 {
+    text-align: center;
+    font-style: 35px;
+    margin-bottom: 15px;
+    padding: 10px;
+    letter-spacing: -1px;
+}
+.login_form >input {
+    width: 300px;  
+    height: 30px;
+    padding: 22px 0px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: none;  
+    font-family: "Inter";
+    border-radius: 3px;
+    font-size: 15px;
 }
 
-.SidebarList .row:hover{
-    cursor: pointer;
-    background-color: #353b48;
+.submit_btn{
+   height: 30px;
+    margin-top: 10px; 
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-family: "Inter";
+    border-radius: 17px;
 }
-.row #title{
-    align-items: center;
-}
-
 

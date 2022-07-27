@@ -1,7 +1,14 @@
-import { Types } from './types';
+export const LOGIN =(user)=>{
+  return{
+      type: "LOGIN_USER",
+      payload: user
+  }
 
-export const ActionCreators = {
+}
 
-  saveUser: (user) => ({ type: Types.SAVE_USER, payload: { user } }),  
-
+export const LOGOUT =()=>{
+  return{
+      type: "LOGOUT_USER",
+      payload: " "
+  }
 }
