@@ -9,11 +9,11 @@ class CourseCard extends Component {
     return (
       <>
        
-            <div className="card1 container card w-25 text-left rounded-0">
+            <div className="card1 p-1 card border border-1 border-dark text-left rounded-0 ">
               <div className="s_img">
                 <img src={this.props.img} />
               </div>
-              <div className="s_name ">
+              <div className="s_name">
                 <p>
                   <b>SUBJECT :</b> {this.props.subject}
                 </p>

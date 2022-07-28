@@ -9,7 +9,7 @@ class AssignmentCard extends Component {
     return (
       <>
        
-            <div className="card1 container card w-25 text-left rounded-0">
+            <div className="card1 container card border border-1 border-dark p-1 text-left rounded-0">
               <div className="s_img">
                 <img src={this.props.img} />
               </div>

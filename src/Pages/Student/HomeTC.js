@@ -13,10 +13,10 @@ const S_HomeTC= () => {
         <div className="s_header">
           <div className="card rounded-0 shadow-sm mt-4">
             <div className="card-body">
-              <h2 className="text-left mt-2">Upcoming Tests </h2>
+              <h2 className="text-left">Upcoming Tests </h2>
             </div>
 
-            <section className="container mt-3">
+            <section className="container">
               <div className="sclassdetails">
                 {data.map((ele) => {
                   return (
