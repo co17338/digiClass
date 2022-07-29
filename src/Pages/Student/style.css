@@ -32,13 +32,13 @@
     font-family: "Inter";
 }
 .login_form{
-    width: 450px;  
+    width: 400px;  
     background: #A5C9CA;  
     display: flex;
     flex-direction: column;
     border-radius: 15px ; 
     margin: 20 0 0 450px;  
-    padding: 80px; 
+    padding: 50px; 
 }
 .login_form> h1 {
     text-align: center;
@@ -52,7 +52,7 @@
     height: 30px;
     padding: 22px 0px;
     padding-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: none;  
     font-family: "Inter";
     border-radius: 3px;
@@ -60,6 +60,7 @@
 }
 
 .submit_btn{
+    width: 300px;
    height: 30px;
     margin-top: 10px; 
     border: none;
@@ -68,4 +69,60 @@
     font-family: "Inter";
     border-radius: 17px;
 }
+.submit_btn:hover{
+    background-color: #dfe6e9;
+ }
 
+.signup {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: "Inter";
+}
+.signup h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-form{
+    width: 450px;  
+    background: #A5C9CA;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px ; 
+    margin: 20 0 0 450px;  
+    padding: 50px; 
+}
+
+.signup-form >input {
+    width: 300px;  
+    height: 30px;
+    padding: 22px 0px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: none;  
+    font-family: "Inter";
+    border-radius: 3px;
+    font-size: 15px;
+}
+.signup_btn{
+    width: 300px;
+    height: 40px;
+     margin-top: 10px; 
+     border: none;
+     color: black;
+     font-size: 14px;
+     font-family: "Inter";
+     border-radius: 17px;
+ }
+ .signup_btn:hover{
+    background-color: #dfe6e9;
+ }
+
+ .signup .login-sec{
+    margin-top: 20px;
+ }

@@ -1,39 +1,60 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useState ,useEffect} from 'react';
+import {useSelector , useDispatch} from "react-redux";
+import { SIGNUP } from '../../Redux/action';
 
 const Signup = () =>{
-    return(
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [cPassword, setCPassword] = useState('');
+    const [number , setNumber] = useState("");
+    const [date, setDate] = useState("");
+    
+    const dispatch = useDispatch();
+    const handleSubmit =(e)=>{
+      e.preventDefault();
+
+      const userdata = dispatch(
+           SIGNUP({
+            name : name,
+            email :email,
+            password :password,
+            number : number,
+            DOB: date
+           })   )
+           console.log(userdata);
+    }
+
+     return(
     <>
     <section className='signup'>
-        <div className = "container mt-5">
-            <div className='signup-content'>
-                <div className='signup-form'>
-                    <h2 className='font-title'> Sign Up</h2>
-                    <form className='register-form'>
-                        <div className='form-group'>
-                        <label for ="name">Enter full name:</label>
-                        <input type="text" name="name" id="name" autoComplete="off"placeholder=
-                        "Your Name"/>
+                <form className='signup-form'onSubmit={(e)=>handleSubmit(e)}>
+                    <h2 className='font-title'> Create New Account</h2>
+                    <input type="name" placeholder ="Full-name" value={name} onChange={(e)=>setName(e.target.value)}/>
+                    <input type="email" placeholder ="Email Address"value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    <input type="password" placeholder ="Password"value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                    
+                    <input type="password" placeholder ="Confirm Password"value={cPassword} />
+                    <input type="number" placeholder ="Mobile Number"value={number} onChange={(e)=>setNumber(e.target.value)}/>
+                    <input type="date" placeholder ="DOB"value={date} onChange={(e)=>setDate(e.target.value)}/>
+                    {/* <input type="radio" value={gender}> Male</input>
+                    <input type="radio" value={gender}> Female</input> */}
+                    <button type="submit" className='signup_btn'>Sign Up</button>  
+                    
+
+                    <div className='login-sec'>
+                            <p>Already have an Account?
+                            <NavLink to="/login" className="gologin">Login</NavLink> </p>
                         </div>
-                        <div className='form-group'>
-                        <label for ="email">Enter Email-Id:</label>
-                        <input type="text" name="email" id="email" autoComplete="off"placeholder=
-                        "Your Email"/>
-                        </div>
-                        <div className='form-group'>
-                        <label for ="phone">Enter Mobile Number:</label>
-                        <input type="number" name="phone" id="phone" autoComplete="off"placeholder=
-                        "Phone number"/>
-                        </div>
-                        <label for ="name">Gender:</label>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="male" value="male" checked/>
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" id="female" value="female"></input>
+                        
+
+
+
                     
                     </form>
-                </div>
-            </div>
-        </div>
+            
     </section>
 
     </>

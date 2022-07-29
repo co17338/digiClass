@@ -42,7 +42,11 @@ export const userreducer =(state = INIT_STATE,action)=>{
             }
             
             
-            
+        case "SIGNUP_USER":
+            return{
+                ...state,
+                user: action.payload
+            }
         default:
             return state;
     }

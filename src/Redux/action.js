@@ -12,3 +12,10 @@ export const LOGOUT =()=>{
       payload: " "
   }
 }
+
+export const SIGNUP =(user)=>{
+  return{
+      type: "SIGNUP_USER",
+      payload: user
+  }
+}

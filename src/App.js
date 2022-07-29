@@ -14,18 +14,19 @@ class App extends Component{
 
     render(){
         return(
-          <> 
-          <Login/>,
-          {/* <Routes>
-            <Route exact path='/login' element={<Login/>}/>
-            <Route exact path='/shome' element={<S_Home/>}/>
-            <Route exact path='/signup' element={<Signup/>}/>
+          <>
+          <Routes>
+            <Route path='/' element={<Signup/>}/>
+            <Route path='/signup' element={<Signup/>}/>
 
+            <Route path='/login' element={<Login/>}/>
+          </Routes>
+
+          </>
+
+          
            
-          </Routes> */}
-          <Signup/>
-           
-                </>
+               
                 
         )
     }

@@ -2,10 +2,9 @@ import { useState } from 'react';
 import './style.css'
 import {useSelector , useDispatch} from "react-redux";
 import {LOGIN} from '../../Redux/action'
+import { NavLink } from 'react-router-dom';
 
 function Login() {
-
-    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -16,7 +15,6 @@ function Login() {
 
       const userdata = dispatch(
            LOGIN({
-            name:name,
             email :email,
             password :password,
             loggedIn :true,
@@ -28,8 +26,7 @@ function Login() {
     <div className='login'>
     <form className='login_form'onSubmit={(e)=>handleSubmit(e)}>
         <h1>Login Form</h1>
-        <input type="name" placeholder ="Username" value={name} onChange={(e)=>setName(e.target.value)}/>
-        <input type="email" placeholder ="Email"value={email} onChange={(e)=>setEmail(e.target.value)}/>
+        <input type="email" placeholder ="Email Address"value={email} onChange={(e)=>setEmail(e.target.value)}/>
         <input type="password" placeholder ="password"value={password} onChange={(e)=>setPassword(e.target.value)}/>
 
         <button type="submit" className='submit_btn'>Login</button>   
@@ -37,7 +34,7 @@ function Login() {
         
         <a href="#">Forgot Password?</a>
         <br/>
-        <a href="#">Create New Account</a>
+        <NavLink to="/signup" className="gologin">Create New Account</NavLink>
 
     </form>
     </div>
