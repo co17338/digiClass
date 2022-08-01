@@ -4,9 +4,7 @@ import { connect } from "react-redux";
 import "./style.css";
 import ClassList from "./ClassList";
 import Navbar from "./Navbar.js";
-import CourseCard from "../../Components/CourseCard";
-import AssignmentCard from "../../Components/AssignmentCard";
-import assignmentList from "./assignmentList";
+import CourseCard from "../../S_Components/CourseCard";
 
 const S_HomeCC= () => {
   var [data, setdata] = useState(ClassList);

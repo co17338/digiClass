@@ -1,7 +1,7 @@
 import { Component, useState } from "react";
 import { connect } from "react-redux";
 import "./style.css";
-import AssignmentCard from "../../Components/AssignmentCard";
+import AssignmentCard from "../../S_Components/AssignmentCard";
 import assignmentList from "./assignmentList";
 
 const S_HomeAC= () => {

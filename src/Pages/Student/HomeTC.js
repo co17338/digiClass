@@ -1,7 +1,7 @@
 import { Component, useState } from "react";
 import { connect } from "react-redux";
 import "./style.css";
-import TestCard from "../../Components/TestCard";
+import TestCard from "../../S_Components/TestCard";
 import testList from "./testList";
 
 const S_HomeTC= () => {
@@ -11,7 +11,7 @@ const S_HomeTC= () => {
     <>
       <div className="container mt-2 ">
         <div className="s_header">
-          <div className="card rounded-0 shadow-sm mt-4">
+          <div className="card rounded-0 shadow-sm  mt-4 mb-5">
             <div className="card-body">
               <h2 className="text-left">Upcoming Tests </h2>
             </div>

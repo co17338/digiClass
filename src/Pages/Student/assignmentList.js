@@ -33,4 +33,6 @@ const assignmentList=[
 
 
 ]
+let NumberOfAssignments = assignmentList.length;
 export default assignmentList;
+export {NumberOfAssignments};

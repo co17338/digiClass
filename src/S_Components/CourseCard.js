@@ -27,6 +27,8 @@ class CourseCard extends Component {
                   {this.props.c_timing}
                 </p>
               </div>
+             
+               
             </div>
          
       </>
